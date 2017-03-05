@@ -1,8 +1,40 @@
-# Object files
+
+# Created by https://www.gitignore.io/api/osx,windows,atmelstudio,c
+
+### AtmelStudio ###
+## Ignore Atmel Studio temporary files and build results
+# http://www.atmel.com/microsite/atmel_studio6/
+
+# Atmel Studio is powered by an older version of Visual Studio,
+# so most of the project and solution files are the same as VS files,
+# only prefixed by an `at`.
+
+#Build Directories
+[Dd]ebug/
+[Rr]elease/
+
+#Build Results
 *.o
+*.d
+*.eep
+*.elf
+*.hex
+*.map
+*.srec
+
+#User Specific Files
+*.atsuo
+
+### C ###
+# Prerequisites
+
+# Object files
 *.ko
 *.obj
-*.elf
+
+# Linker output
+*.ilk
+*.exp
 
 # Precompiled Headers
 *.gch
@@ -26,8 +58,68 @@
 *.app
 *.i*86
 *.x86_64
-*.hex
 
 # Debug files
 *.dSYM/
 *.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/osx,windows,atmelstudio,c
