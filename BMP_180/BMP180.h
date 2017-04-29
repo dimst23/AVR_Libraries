@@ -77,6 +77,6 @@ extern double BMP180_Get_Celcius_Temp(void); //Get the decimal temperature in Ce
 extern int32_t BMP180_Get_Pressure(void); //Get the pressure in Pascal
 extern double BMP180_Get_hPa_Press(void); //Get the hPa value of the pressure
 extern double BMP180_Absolute_Altitude(double sea_level_press); //Calculate the altitude in meters providing the sea level pressure in hPa
-extern double BMP180_Sea_Level_Press(double sea_level_press); //Calculate the sea level pressure in hPa providing the altitude in meters
+extern double BMP180_Sea_Level_Press(double altitude); //Calculate the sea level pressure in hPa providing the altitude in meters
 
 #endif
