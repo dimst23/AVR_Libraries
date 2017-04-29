@@ -1,4 +1,4 @@
-#BMP180 Library Guide
+# BMP180_Library_Guide
 In order to be able and use the BMP180 sensor library, the I2C or TWI interface library is needed, that is the reason is included with the pressure sensor library. There is no need for explicit inclusion of the TWI library, because it is included in the BMP180.
 
 
