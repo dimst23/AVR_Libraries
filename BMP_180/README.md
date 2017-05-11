@@ -31,8 +31,8 @@ The available functions along with a small description of their functionality ar
    
    This function provides a calculation of the local sea level compensated pressure, or *QNH*, providing the altitude from the sea level of the current location.
 
-* **Note:** Using functions 6 and/or 7 makes the program more memory intensive, meaning it requires more flash and ram, because of the math functions called in these function. If there are memory constraints in the project, the use of these functions should be avoided.
+* ***Note:*** Using functions 6 and/or 7 makes the program more memory intensive, meaning it requires more flash and ram, because of the math functions called in these function. If there are memory constraints in the project, the use of these functions should be avoided.
 
-* **One final note:** The TWI library was writen for the ATmega644p AVR and the registers used are for that AVR, if your AVR is a different one, it is recomended to first look at its datasheet in the TWI or I2C section and check if the resigters match. If they do match you can use it as is, otherwise you need to modify the coreponding areas.
+* ***One final note:*** The TWI library was writen for the ATmega644p AVR and the registers used are for that AVR, if your AVR is a different one, it is recomended to first look at its datasheet in the TWI or I2C section and check if the resigters match. If they do match you can use it as is, otherwise you need to modify the coreponding areas.
 
 You can find the sensor datasheet at: https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf
