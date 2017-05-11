@@ -1,6 +1,6 @@
 #include "DHT.h"
 
-int8_t DHT_Read_Data(void); //Internal function declaration
+int8_t DHT_Read_Data(void);
 
 int16_t data[2] = {0}; //Array to store the received values
 
