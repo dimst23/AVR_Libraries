@@ -1,5 +1,11 @@
 #include "BMP180.h" //Include the definitions of functions and many other necessary things
 
+//Internal function prototypes
+void BMP180_Read_Bytes(uint8_t registe, uint8_t *byte_read, uint8_t byte_count);
+void BMP180_Get_Calibration_Params(void);
+uint16_t BMP180_Read_Temp_Raw(void);
+int32_t BMP180_Read_Press_Raw(void);
+
 /*
 * Write the desired command to the sensor via I2C
 * Provide the address of the command register and then provide the command to be sent via I2C
